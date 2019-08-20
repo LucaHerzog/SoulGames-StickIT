@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SG-StickIT">
+    <output-path>$PROJECT_DIR$/out/artifacts/SG_StickIT</output-path>
+    <root id="archive" name="SG-StickIT.jar">
+      <element id="module-output" name="SicktIT" />
+      <element id="library" level="project" name="spigot" />
+    </root>
+  </artifact>
+</component>
