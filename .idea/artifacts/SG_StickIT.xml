@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/SG_StickIT</output-path>
     <root id="archive" name="SG-StickIT.jar">
       <element id="module-output" name="SicktIT" />
-      <element id="library" level="project" name="spigot" />
+      <element id="library" level="project" name="Spigot" />
     </root>
   </artifact>
 </component>

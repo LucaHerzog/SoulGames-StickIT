@@ -33,15 +33,15 @@ public class MySQL {
     }
 
     public void close() {
-       try {
-          if(con != null) {
-              con.close();
-              System.out.println("[MySQL] Die Verbindung zur MySQL wurde Erfolgreich beendet!");
-          }
+        try {
+            if (con != null) {
+                con.close();
+                System.out.println("[MySQL] Die Verbindung zur MySQL wurde Erfolgreich beendet!");
+            }
 
-       } catch (SQLException e) {
-           System.out.println("[MySQL] Fehler beim beenden der Verbindung zur MySQL! Fehler: " + e.getMessage());
-       }
+        } catch (SQLException e) {
+            System.out.println("[MySQL] Fehler beim beenden der Verbindung zur MySQL! Fehler: " + e.getMessage());
+        }
     }
 
     public void update(String qry) {
@@ -50,8 +50,8 @@ public class MySQL {
             st.executeUpdate(qry);
             st.close();
         } catch (SQLException e) {
-           connect();
-           System.err.println(e);
+            connect();
+            System.err.println(e);
 
         }
     }
@@ -66,4 +66,6 @@ public class MySQL {
             System.err.println(e);
         }
         return rs;
-     }
+    }
+
+}
